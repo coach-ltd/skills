@@ -112,7 +112,7 @@ This function handles validation, transformation, and persistence in 45 lines.
 - "You could use optional chaining here" (when the explicit check is equally clear)
 - "Missing trailing comma" (formatter territory)
 
-**These are NOT posted inline.** They go in the "Elements filtres" global comment for transparency.
+**These are NOT posted inline.** They go in the "Filtered Elements" global comment for transparency.
 
 ## Filtering Principles
 

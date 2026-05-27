@@ -47,7 +47,7 @@ Skip Steps 1, 2, 3. Go straight from Step 0 (Fetch) to reviewing the code yourse
 - **Integration** — Does this fit well in the existing codebase? Naming conventions, patterns, architecture?
 - **Systemic thinking** — Is the problem bigger than this PR? Is the dev patching a symptom instead of fixing the root cause? Would a different approach prevent this class of bugs entirely?
 
-**Output:** Post inline comments directly (same format as Step 4). Post one global summary comment with your overall assessment. No Intention/Specs/Elements filtres comments.
+**Output:** Post inline comments directly (same format as Step 4). Post one global summary comment with your overall assessment. No Intention/Specs/Filtered Elements comments.
 
 ### Full Mode
 
@@ -134,13 +134,13 @@ Compare the ticket requirements against the actual diff. Post global comment:
 
 ### Source: TSC-123 — "Ticket title"
 
-**Couvert par la PR :**
+**Covered by the PR:**
 - [requirement satisfied]
 
-**Manquant dans la PR :**
+**Missing from the PR:**
 - [requirement from ticket not implemented]
 
-**Ajouts hors spec :**
+**Out-of-spec additions:**
 - [changes not mentioned in ticket — flag if concerning or note if pertinent]
 ```
 
@@ -162,7 +162,7 @@ Look for:
 If blocking paths are found, include them in the Specifications comment under a dedicated section:
 
 ```markdown
-**Chemins utilisateur a verifier :**
+**User paths to verify:**
 - [path description + impact + what to check]
 ```
 
@@ -294,9 +294,9 @@ Every inline comment follows this structure:
 Post a third global comment listing what was filtered:
 
 ```markdown
-## Elements filtres
+## Filtered Elements
 
-{count} observations jugees non significatives par les agents:
+{count} observations judged not significant by the agents:
 
 - **{file}:{line}** — {agent}: {one-line summary of what was filtered and why}
 - ...
@@ -309,7 +309,7 @@ This provides transparency without polluting the code review.
 Post a section in the Specifications global comment highlighting what's well done:
 
 ```markdown
-## Ce qui est bien fait
+## What's Done Well
 
 - [pattern or decision] — [why it's good]
 - ...
@@ -322,7 +322,7 @@ This reinforces good practices and shows the review is balanced, not just a list
 1. Global comment: **Intention** (Step 1)
 2. Global comment: **Specifications** (with specs, user paths, and positive feedback — Step 2)
 3. All inline comments (Step 4 — classified findings)
-4. Global comment: **Elements filtres** (Step 4 — filtered items)
+4. Global comment: **Filtered Elements** (Step 4 — filtered items)
 
 ## Common Mistakes
 
