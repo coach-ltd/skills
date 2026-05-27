@@ -21,3 +21,7 @@ invoked via their slash command or auto-triggered based on their `description`.
 
 The `description` frontmatter determines when a skill triggers — keep it specific
 about the usage context.
+
+## License
+
+Released under the [MIT License](./LICENSE).
