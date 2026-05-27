@@ -1,6 +1,6 @@
 # coach-skills
 
-Shared custom Claude Code skills for the **Sales Coach** team.
+Shared custom Claude Code skills made by the **Coach** team.
 
 Each folder is a self-contained skill (a `SKILL.md` plus references). Skills are
 invoked via their slash command or auto-triggered based on their `description`.
@@ -21,10 +21,3 @@ invoked via their slash command or auto-triggered based on their `description`.
 
 The `description` frontmatter determines when a skill triggers — keep it specific
 about the usage context.
-
-## Adding a skill
-
-1. Create a `my-skill/` folder with a `SKILL.md`.
-2. Fill in the `name` and `description` frontmatter.
-3. Put long-form docs in `references/`.
-4. Add the new skill to the table above.
